@@ -1,0 +1,111 @@
+/* Alien Theme Styling */
+body {
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #0d0e0e 0%, #020202 100%);
+  color: #39ff14; /* Neon green alien color */
+}
+
+h1, h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #00ffcc; /* Aqua neon */
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px #00ffcc;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-shadow: 0 0 8px #39ff14;
+}
+
+a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.7); /* Transparent black for sci-fi panels */
+  border: 1px solid #00ffcc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 15px #39ff14, 0 0 30px #00ffcc;
+  animation: fadeIn 1.5s ease;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background: linear-gradient(90deg, #39ff14, #00ffcc);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 0 10px #39ff14, 0 0 20px #00ffcc;
+}
+
+.button:hover {
+  background: linear-gradient(90deg, #00ffcc, #39ff14);
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #39ff14;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #121212;
+  border: 1px solid #00ffcc;
+  border-radius: 6px;
+  color: #39ff14;
+  font-family: 'Orbitron', sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #5afdb0; /* Faint neon green for placeholders */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.project-image {
+  width: 20%; /* Make the image full width of the card */
+  border-radius: 8px;
+  margin-bottom: 20px; /* Space between the image and the text */
+  box-shadow: 0 0 15px #39ff14, 0 0 30px #00ffcc; /* Alien-style glow */
+}
+.project-image {
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto 20px; /* Centers the image horizontally and adds space below */
+  width: 20%; /* Adjusts width to fit nicely in the card */
+  border-radius: 8px;
+  box-shadow: 0 0 15px #39ff14, 0 0 30px #00ffcc; /* Alien-style glow */
+}
+
